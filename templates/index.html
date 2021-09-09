@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        {% assets 'css' %}
-        <link rel="stylesheet" href="{{ ASSET_URL }}">
-        {% endassets %}
-        <script src="//unpkg.com/alpinejs" defer></script>
-    </head>
-    <body class="bg-white-100">
+{% extends 'base.html' %}
+{% block body %}
 
-        <div x-data="{ isOpen: false }">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold
-                py-2 px-4 rounded" @click="isOpen= !isOpen">Click!</button>
-            <span x-show="isOpen">
-                <p1 class="text-blue-500"> Hello {{ name }} </p1>
-            </span>
-        </div>
-    </body>
-</html>
+<div x-data="{ isOpen: false }">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold
+        py-2 px-4 rounded" @click="isOpen= !isOpen">Click!</button>
+    <span x-show="isOpen">
+        <p1 class="text-blue-500"> Hello {{ name }} </p1>
+    </span>
+</div>
+
+<button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold
+    py-2 px-4 border border-gray-400 rounded shadow">
+    Button
+</button>
+{% endblock %}

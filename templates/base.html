@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        {% assets 'css' %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+        <script src="//unpkg.com/alpinejs" defer></script>
+    </head>
+    <body>
+        <nav class="bg-teal-300 x-data="{ open: false }">
+
+
+            <ul class="flex justify-between">
+                <li class="mr-3">
+                    <a class="inline-block px-4 py-2 text-white bg-blue-500 border border-blue-500 rounded hover:bg-blue-700"
+                        href="#">Active
+                        Pill</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block px-4 py-2 text-blue-500 border border-white rounded hover:border-gray-200 hover:bg-gray-200" href="#">Pill</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block px-4 py-2 text-gray-400 cursor-not-allowed" href="#">Disabled Pill</a>
+                </li>
+            </ul>
+        </nav>
+        {% block body %}{% endblock %}
+
+    </body>
+
+</html>
