@@ -23,7 +23,7 @@
 ### Running the project
 
 1. Run `npm build` to compile the tailwind.css files
-2. Run `flask run`, your server should be running at `localhost:5000`
+2. While under your virtual environment, run `flask run`. Your server should start at `localhost:5000`
 
 ----
 
