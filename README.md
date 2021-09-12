@@ -1,4 +1,32 @@
 # number3
+
+## Setup
+
+### Install Python dependencies
+
+#### With pipenv
+
+1. Run `pipenv install` to install dependencies
+2. Run `pipenv shell` to enter your virtual environment
+
+#### With Venv
+
+1. Run `python3 -m venv venv` to create virtual environment
+2. Run `source venv/bin/activate` to enter your virtual environment
+3. Run `pip install -r requirements.txt` to install dependencies
+
+### Install Tailwind and Tailwind dependencies
+
+1. Run `npm install` to install Tailwind and 
+
+
+### Running the project
+
+1. Run `npm build` to compile the tailwind.css files
+2. Run `flask run`, your server should be running at `localhost:5000`
+
+----
+
 attempt # 3
 run :
 pipenv istall
