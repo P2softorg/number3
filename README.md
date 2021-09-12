@@ -4,12 +4,12 @@
 
 ### Install Python dependencies
 
-#### With pipenv
+#### With `pipenv`
 
 1. Run `pipenv install` to install dependencies
 2. Run `pipenv shell` to enter your virtual environment
 
-#### With Venv
+#### With `venv`
 
 1. Run `python3 -m venv venv` to create virtual environment
 2. Run `source venv/bin/activate` to enter your virtual environment
@@ -17,7 +17,7 @@
 
 ### Install Tailwind and Tailwind dependencies
 
-1. Run `npm install` to install Tailwind and 
+1. Run `npm install` to install Tailwind and Tailwind dependencies
 
 
 ### Running the project
