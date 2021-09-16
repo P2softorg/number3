@@ -31,6 +31,9 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   theme: {
+    debugScreens:{
+      position:['top','left'],
+    },
     extend:{
    colors: {
       'test-blue': {
@@ -49,5 +52,7 @@ module.exports = {
   },
 
   variants: {},
-  plugins: [],
+  plugins: [
+    require('tailwindcss-debug-screens')
+  ],
 }
