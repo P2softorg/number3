@@ -31,7 +31,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   theme: {
-    colors: {
+    extend:{
+   colors: {
       'test-blue': {
         100: '#d0e7fb',
         DEFAULT: '#0063bd',
@@ -41,8 +42,12 @@ module.exports = {
       },
       green: colors.green,
       teal: colors.teal
+      
     },
+    },
+ 
   },
+
   variants: {},
   plugins: [],
 }

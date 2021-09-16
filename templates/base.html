@@ -6,13 +6,15 @@
         {% assets 'css' %}
         <link rel="stylesheet" href="{{ ASSET_URL }}">
         {% endassets %}
-        <script src="//unpkg.com/alpinejs" defer></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+            defer></script>
     </head>
     <body>
         <nav class="bg-teal-300 x-data="{ open: false }">
 
 
-            <ul class="flex justify-between">
+            <ul class="flex justify-evenly">
                 <li class="mr-3">
                     <a class="inline-block px-4 py-2 text-white bg-blue-500 border border-blue-500 rounded hover:bg-blue-700"
                         href="#">Active
