@@ -4,7 +4,8 @@
 
 
 </header>
-<section id="Introduction" class="grid grid-cols-2 gap-5 px-8 mt-5 mb-5 text-blue-900">
+<section id="Introduction" class="grid grid-cols-2 gap-5 px-8 mt-5 mb-5
+    text-blue-900">
     <div id="intro" class="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto
             dolorum id quibusdam animi illum nam velit ab, itaque iure rem,
@@ -32,13 +33,16 @@
 </section>
 
 <div x-data="{ isOpen: false }">
-    <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700" @click="isOpen= !isOpen">Click!</button>
+    <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded
+        hover:bg-blue-700" @click="isOpen= !isOpen">Click!</button>
     <span x-show="isOpen">
         <p1 class="text-blue-600"> Hello {{ name }} </p1>
     </span>
 </div>
 
-<button class="px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow hover:bg-gray-100">
+
+<button class="px-4 py-2 font-semibold text-gray-800 bg-white border
+    border-gray-400 rounded shadow hover:bg-gray-100">
     Button
 </button>
 {% endblock %}

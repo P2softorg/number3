@@ -24,4 +24,8 @@ def index():
 
 @app.route("/home",)
 def home():
-    return "<h1>This is a home page</h1>"
+    skills = [
+        {"id": 1, "name": "phil", "codelang": "SQL"},
+        {"id": 2, "name": "phil2 (miau)", "codelang": "Java Master"},
+    ]
+    return render_template("demo.html", skills=skills)

@@ -27,6 +27,7 @@
 //   },
 //   plugins: [],
 // }
+const { emerald } = require('tailwindcss/colors')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -44,8 +45,8 @@ module.exports = {
         
       },
       green: colors.green,
-      teal: colors.teal
-      
+      teal: colors.teal,
+      emerald: colors.emerald
     },
     },
  
