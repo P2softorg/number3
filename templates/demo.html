@@ -1,8 +1,10 @@
 
 {% extends 'base.html' %}
 {% block body %}
-<nav class="bg-teal-300 x-data="{ open: false }">
+<!-- <nav class="bg-teal-300 x-data="{ open: false }"> -->
 
+<nav class="bg-teal-300 p-2 mt-0 fixed w-full z-10 top-0 x-data="{ open: false
+    }">
 
     <ul class="flex justify-evenly">
         <li class="mr-3">
@@ -11,7 +13,7 @@
                 url_for('index') }}">Home</a>
         </li>
         <li class="mr-3">
-            <a class="inline-block px-4 py-2 text-white bg-blue-500 border border-blue-500 rounded hover:bg-blue-700"href="#">Demo</a>
+            <a class="inline-block px-4 py-2 text-white bg-blue-500 border border-blue-500 rounded hover:bg-blue-700" href="#">Demo</a>
         </li>
         <li class="mr-3">
             <a class="inline-block px-4 py-2 text-gray-400 cursor-not-allowed"
@@ -19,7 +21,7 @@
         </li>
     </ul>
 </nav>
-<table class="mt-10 border-2 table-fixed ml-36">
+<table class="mt-20 border-2 table-fixed ml-36">
     <thead">
         <tr>
             <th class="w-1/6 ... px-8 py-4 bg-emerald-200 border-2
