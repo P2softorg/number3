@@ -21,6 +21,7 @@
         </li>
     </ul>
 </nav>
+
 <table class="mt-20 border-2 table-fixed ml-36">
     <thead">
         <tr>
@@ -56,6 +57,42 @@
         </tr> -->
     </tbody>
 </table>
+
+<h1 class="px-6 mt-10" x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+<div x-data="{ count: 'Philip'}">
+    <button class="px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded shadow hover:bg-gray-100" x-on:click="count=
+        count + ' is cool'">Click to find out!</button>
+    <span x-text="count"></span>
+
+    <h1 x-text="count"></h1>
+</div>
+
+<h3 class="mb-5 text-3xl text-center">Alpine quick search</h3>
+<div class="grid grid-cols-2 gap-10 ml-10 mr-11"
+    x-data="{
+    search: '',
+
+    items: ['john', 'mark', 'luke','Mathew', 'Jin Lu', 'Mikhail', 'Anna',
+    'Phil', 'Canada','Michael', 'Miguel', 'january', 'jam', 'laughter', 'smoke',
+    'Angel'],
+
+
+    get filteredItems() {
+    return this.items.filter(
+    i=> i.startsWith(this.search)
+    )
+    }
+    }"
+    >
+    <input class="w-40 h-10 ml-96" x-model="search" placeholder="Search...">
+    <ul>
+        <template x-for="item in filteredItems" :key="item">
+            <li x-text="item"></li>
+        </template>
+    </ul>
+</div>
+
+
 <!-- 
 <section id="table2">
 
