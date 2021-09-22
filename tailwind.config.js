@@ -48,6 +48,7 @@ module.exports = {
       teal: colors.teal,
       emerald: colors.emerald
     },
+     backgroundColor: ['active'],
     },
  
   },
