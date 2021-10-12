@@ -22,6 +22,10 @@
     </ul>
 </nav>
 
+<div class="container h-auto mx-auto mt-24 bg-white shadow-lg md:mt-16">
+
+
+
 <table class="mt-20 border-2 table-fixed ml-36">
     <thead">
         <tr>
@@ -221,6 +225,12 @@
     >Phil1 is cooler than Phil2 👋</div>
 </div>
 
-<div class="mt-80"> spacer</div>
+<div x-init class="mt-80">
+<input class="mb-6 border-2 border-black" type="text" @keyup.enter="alert('Submitted!')">
+
+ spacer</div>
+</div>
+
+
 
 {% endblock %}
